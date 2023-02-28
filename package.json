@@ -8,6 +8,8 @@
     "subgraph:codegen": "graph codegen --output-dir ./generated",
     "subgraph:build": "graph build",
     "subgraph:deploy:hosted": "graph deploy $SLUG --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/ --access-token $ACCESS_TOKEN",
+    "subgraph:deploy:neonlabs": "graph deploy $SLUG --ipfs https://ipfs.neontest.xyz/ --node https://graph.neontest.xyz/deploy/suz3k9m1p803mpfsyqvdf0qdqaj5/",
+    "deploy:neonlabs": "VERSION=v2 BLOCKCHAIN=neonlabs NETWORK=neonlabs env-cmd npm run prepare:subgraph && SLUG=aave/aave-v2-neonlabs env-cmd npm run subgraph:deploy:neonlabs",
     "deploy:hosted:mainnet": "VERSION=v2 BLOCKCHAIN=ethereum NETWORK=mainnet env-cmd npm run prepare:subgraph && SLUG=aave/protocol-v2 env-cmd npm run subgraph:deploy:hosted",
     "deploy:hosted:goerli-v2": "VERSION=v2 BLOCKCHAIN=ethereum NETWORK=goerli env-cmd npm run prepare:subgraph && SLUG=aave/protocol-v2-goerli env-cmd npm run subgraph:deploy:hosted",
     "deploy:hosted:goerli-v3": "VERSION=v3 BLOCKCHAIN=v3 NETWORK=goerli env-cmd npm run prepare:subgraph && SLUG=aave/protocol-v3-goerli env-cmd npm run subgraph:deploy:hosted",

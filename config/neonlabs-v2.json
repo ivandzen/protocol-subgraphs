@@ -1,0 +1,9 @@
+{
+  "network": "neonlabs",
+  "AaveOracleAddress": "0x6ec6738eE0CA5cEd9a5d43C9C391174F243db917",
+  "AaveOracleStartBlock": 194584817,
+  "LendingPoolAddressesProviderRegistryAddress": "0x65BAa0e9251d0FF9509B33895cdB1e998C4673c5",
+  "LendingPoolAddressesProviderRegistryStartBlock": 194584817,
+  "ChainlinkSourcesRegistryAddress": "0x80662336874834355167abA8f524093e6ff77024",
+  "ChainlinkSourcesRegistryStartBlock": 194584817
+}
